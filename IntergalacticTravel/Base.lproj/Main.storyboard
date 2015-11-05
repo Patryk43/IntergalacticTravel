@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S6Q-Zh-Rz9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--IntergalacticTravel Inc-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntergalacticTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,65 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AZ5-MC-RXD">
+                                <rect key="frame" x="252" y="279" width="96" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTK-Xx-OeM">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
+                                        <state key="normal" title="Visit Blue Star"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="1hW-ek-vJq"/>
+                                    <constraint firstAttribute="height" constant="30" id="nuM-WM-WWG"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EO0-m6-vF4">
+                                <rect key="frame" x="247" y="131" width="106" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKk-zW-Lrj">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="30"/>
+                                        <state key="normal" title="Visit Red Dwarf"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GWj-F5-f2h"/>
+                                    <constraint firstAttribute="width" constant="106" id="uBm-Ka-C1N"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AZ5-MC-RXD" firstAttribute="top" secondItem="EO0-m6-vF4" secondAttribute="bottom" constant="118" id="CEM-ne-Vjd"/>
+                            <constraint firstItem="EO0-m6-vF4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EPX-4N-aU3"/>
+                            <constraint firstItem="AZ5-MC-RXD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Szl-q1-k5R"/>
+                            <constraint firstItem="EO0-m6-vF4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="lRF-Hg-YST"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="IntergalacticTravel Inc" id="hsQ-YI-eRL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1252" y="349"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qK8-cH-BgO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S6Q-Zh-Rz9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ByN-rT-F1Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xDq-fA-pVh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGk-Ta-03u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="1009"/>
         </scene>
     </scenes>
 </document>
