@@ -23,6 +23,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTK-Xx-OeM">
                                         <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
                                         <state key="normal" title="Visit Blue Star"/>
+                                        <connections>
+                                            <segue destination="BWm-3F-qpB" kind="show" id="zX7-kQ-VLa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -36,6 +39,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKk-zW-Lrj">
                                         <rect key="frame" x="0.0" y="0.0" width="106" height="30"/>
                                         <state key="normal" title="Visit Red Dwarf"/>
+                                        <connections>
+                                            <segue destination="BWm-3F-qpB" kind="show" id="cbv-WV-3Op"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -58,6 +64,24 @@
             </objects>
             <point key="canvasLocation" x="1252" y="349"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="5MJ-7P-qA0">
+            <objects>
+                <viewController id="BWm-3F-qpB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MiO-49-2XZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qul-ZL-x3d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cvx-wK-QQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdE-8f-7U8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="349"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="qK8-cH-BgO">
             <objects>
@@ -77,4 +101,7 @@
             <point key="canvasLocation" x="319" y="1009"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zX7-kQ-VLa"/>
+    </inferredMetricsTieBreakers>
 </document>
